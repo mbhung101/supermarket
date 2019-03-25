@@ -6,9 +6,12 @@ class Employee extends Component {
   person(params){
     var employee = {
       name: "",
+      height: "" ,
+      schedule: [],
+      weight: 0 ,
       age: 0,
       strength: 0,
-      intellengence: 0,
+      intellegence: 0,
       charisma: 0,
       speed: 0,
       loyalty: 0,
@@ -16,13 +19,17 @@ class Employee extends Component {
       effects: [],
     }
     employee.name = "King Randy"
-    return employee.name
+    return employee
   }
 
   render() {
     return (
       <div>
-        {this.person()}
+        <h3> {this.person().name} </h3>
+        <br></br>
+        Height: {this.person.height}
+        <br></br>
+        Weight: {this.person.weight}
       </div>
     );
   }
