@@ -6,7 +6,7 @@ class Employee extends Component {
   person(params){
     var employee = {
       name: "",
-      height: "" ,
+      height: "5ft 9in" ,
       schedule: [],
       weight: 0 ,
       age: 0,
@@ -27,9 +27,9 @@ class Employee extends Component {
       <div>
         <h3> {this.person().name} </h3>
         <br></br>
-        Height: {this.person.height}
+        Height: {this.person().height}
         <br></br>
-        Weight: {this.person.weight}
+        Weight: {this.person().weight}
       </div>
     );
   }
